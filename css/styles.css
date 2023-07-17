@@ -1,0 +1,184 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #0B132B;
+    color: #B6CCD7;
+    
+}
+
+p{
+    font-size: 1.5rem;
+    opacity: 80%;
+}
+
+
+
+section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.presentation{
+    grid-area: 6 / 4 / 6 / 8;
+    position: relative;
+}
+
+.presentation  h3{
+    margin: 0;
+    opacity: 18%;
+    z-index: 1;
+    
+}
+
+.presentation  h5{
+    margin: 0;
+    opacity: 14%;
+    
+}
+
+.presentation > img{
+   position: absolute;  
+    left: -70px;
+    bottom: 14px;
+    opacity: 70%;
+    scale: 1.3;
+   
+    
+}
+
+.pointer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 12 / 7 / 12 / 8;
+    opacity: 70%;
+    transition-delay: 0.5s;
+    transition: 2s; 
+    padding-top: 5px; 
+    width: 160px;
+    height: 54px;
+    border-radius: 36px;
+    background-color: #0F1938;
+}
+
+.botoon{
+    display: flex;
+    text-decoration: none;
+    color: #B6CCD7;
+    padding: 20px;
+    transition: 1s;
+}
+
+.botoon:hover{
+    color: cornflowerblue; 
+    transition: 1s;
+}
+
+.pointer:hover{
+  color: cornflowerblue; 
+  opacity: 80%;
+  scale:1.04;
+  transition: 1s;
+}
+
+
+
+.reason{
+    grid-area: 4 / 3 / 9 / 6;
+}
+
+.art{
+    grid-area: 4 / 8 / 9 /10;
+   position: relative;
+   opacity: 80%;
+   
+}
+
+.art > img {
+    scale: 1.2;
+}
+
+.art > h6{
+    position:absolute;
+    top: 555px;
+    left: -35px;
+    font-size: 18px;
+}
+
+.art > p{
+    position:absolute;
+    top: 572px;
+    left: -35px;
+    font-size: 11px;
+}
+
+.about > img{
+    grid-area: 5 / 6 / 8 / 8;
+    margin-left: 40px;
+    scale:1.2;
+    z-index: -1;
+}
+
+.about > .text{
+    grid-area: 4 / 3 / 9 / 6;
+}
+
+.about > p{
+    grid-area: 10 / 9 / 9 / 11;
+}
+
+.textfinito{
+    grid-area: 4 / 3 / 8 / 8;
+}
+
+.contact > .finalimg {
+    grid-area: 7 / 8 / 12 / 11;
+    scale: 1.8;
+    z-index: -1;
+    background-image: url(../assets/images/closing\ filler.png);
+    background-size: cover;
+    opacity: 18%;
+}
+
+.contact li {
+    font-size: 35px;
+    opacity: 80%;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #9BC0FF;
+    transition: 2s;
+    transition-delay: 0.1s;
+    
+}
+
+.contact a:hover{
+    color: lightblue;
+    transition: 1s;
+}
+
+h2{
+    font-size: 54px;
+}
+footer{
+    grid-area: 11 / 6 / 12 / 8;
+    font-size: 8px;
+    margin-top: 140px;
+    opacity: 30%;
+}
+
+@media (max-width:1000px) {
+    section{
+        background-image: url(../assets/images/bomby.jpg);
+        font-size: 1px !important;
+        color: white;
+        
+    }
+    }
+
